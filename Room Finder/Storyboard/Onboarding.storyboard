@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="yhd-qs-R1h">
+            <objects>
+                <viewController storyboardIdentifier="WalkthroughViewController" id="v62-nh-oKl" customClass="WalkthroughViewController" customModule="Room_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yrk-YS-0rA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxn-QW-iGM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="451.5"/>
+                                <connections>
+                                    <segue destination="3Ym-IL-yWY" kind="embed" id="t8S-pZ-fNk"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w6-nJ-Hv8">
+                                <rect key="frame" x="0.0" y="451.5" width="375" height="215.5"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="7ZO-gr-V8q">
+                                        <rect key="frame" x="168" y="8" width="39" height="37"/>
+                                        <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="currentPageIndicatorTintColor" name="fourColor"/>
+                                    </pageControl>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7P-dI-WKy">
+                                        <rect key="frame" x="10" y="45" width="49" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="&lt; PREV">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prevBtnTapped:" destination="v62-nh-oKl" eventType="touchUpInside" id="5jA-TC-f3m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0B-RF-mAW">
+                                        <rect key="frame" x="306" y="39" width="49" height="30"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <state key="normal" title="NEXT &gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextBtnTapped:" destination="v62-nh-oKl" eventType="touchUpInside" id="Qsq-9w-FyX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJI-08-b6m">
+                                        <rect key="frame" x="112" y="163.5" width="151" height="32"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
+                                        <state key="normal" title="Continue as a guest">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By continuing you are agreeing to our Privacy Policy &amp; Terms of Use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDe-6S-VaX">
+                                        <rect key="frame" x="70" y="97" width="235" height="59"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="59" id="anJ-01-yeL"/>
+                                            <constraint firstAttribute="width" constant="235" id="f0F-R8-f0I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20784313725490194" green="0.11372549019607843" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="r7P-dI-WKy" firstAttribute="top" secondItem="7ZO-gr-V8q" secondAttribute="bottom" id="2np-5G-NY2"/>
+                                    <constraint firstItem="7ZO-gr-V8q" firstAttribute="centerX" secondItem="6w6-nJ-Hv8" secondAttribute="centerX" id="6av-1f-13I"/>
+                                    <constraint firstItem="YJI-08-b6m" firstAttribute="top" secondItem="eDe-6S-VaX" secondAttribute="bottom" constant="7.5" id="9WQ-Vd-BOD"/>
+                                    <constraint firstItem="r7P-dI-WKy" firstAttribute="leading" secondItem="6w6-nJ-Hv8" secondAttribute="leading" constant="10" id="Bb1-xb-ctt"/>
+                                    <constraint firstItem="eDe-6S-VaX" firstAttribute="centerX" secondItem="6w6-nJ-Hv8" secondAttribute="centerX" id="DjK-6X-yiP"/>
+                                    <constraint firstItem="7ZO-gr-V8q" firstAttribute="top" secondItem="6w6-nJ-Hv8" secondAttribute="top" constant="8" id="H9c-mI-TAt"/>
+                                    <constraint firstAttribute="trailing" secondItem="P0B-RF-mAW" secondAttribute="trailing" constant="20" id="fOa-AG-icz"/>
+                                    <constraint firstItem="P0B-RF-mAW" firstAttribute="top" secondItem="7ZO-gr-V8q" secondAttribute="bottom" constant="-6" id="g6r-7Q-j3j"/>
+                                    <constraint firstAttribute="bottom" secondItem="YJI-08-b6m" secondAttribute="bottom" constant="20" id="mrm-zh-ELD"/>
+                                    <constraint firstItem="YJI-08-b6m" firstAttribute="centerX" secondItem="6w6-nJ-Hv8" secondAttribute="centerX" id="uFM-xn-oEt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cxn-QW-iGM" firstAttribute="trailing" secondItem="lqb-Ab-IS1" secondAttribute="trailing" id="2ez-WM-Wep"/>
+                            <constraint firstItem="6w6-nJ-Hv8" firstAttribute="bottom" secondItem="lqb-Ab-IS1" secondAttribute="bottom" id="ABL-Mo-LqT"/>
+                            <constraint firstItem="6w6-nJ-Hv8" firstAttribute="trailing" secondItem="lqb-Ab-IS1" secondAttribute="trailing" id="JDj-SU-0na"/>
+                            <constraint firstItem="6w6-nJ-Hv8" firstAttribute="leading" secondItem="lqb-Ab-IS1" secondAttribute="leading" id="JHJ-W7-2hh"/>
+                            <constraint firstItem="6w6-nJ-Hv8" firstAttribute="top" secondItem="cxn-QW-iGM" secondAttribute="bottom" id="RK6-Al-mrC"/>
+                            <constraint firstItem="cxn-QW-iGM" firstAttribute="top" secondItem="yrk-YS-0rA" secondAttribute="top" id="fDx-QB-ds2"/>
+                            <constraint firstItem="6w6-nJ-Hv8" firstAttribute="height" secondItem="lqb-Ab-IS1" secondAttribute="height" multiplier="1:3" id="mpE-BD-oAs"/>
+                            <constraint firstItem="cxn-QW-iGM" firstAttribute="leading" secondItem="lqb-Ab-IS1" secondAttribute="leading" id="rrd-X4-b2r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lqb-Ab-IS1"/>
+                    </view>
+                    <connections>
+                        <outlet property="NextBtn" destination="P0B-RF-mAW" id="7J4-qU-31q"/>
+                        <outlet property="pageControl" destination="7ZO-gr-V8q" id="g3C-Zf-fCO"/>
+                        <outlet property="prevBtn" destination="r7P-dI-WKy" id="9dK-4X-OfQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTN-Of-qMg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="100.29985007496252"/>
+        </scene>
+        <!--Walkthrough Content View Controller-->
+        <scene sceneID="vj3-R4-PBg">
+            <objects>
+                <viewController storyboardIdentifier="WalkthroughContentViewController" id="icu-gf-gCq" customClass="WalkthroughContentViewController" customModule="Room_Finder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rH-ru-2Kf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="451"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cB-Xg-M2n">
+                                <rect key="frame" x="318" y="20" width="37" height="68"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xEz-hO-dVR">
+                                <rect key="frame" x="20" y="98" width="335" height="333"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Nhm-aD-4eq">
+                                        <rect key="frame" x="60" y="0.0" width="215.5" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your perfect room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-Ao-z1R">
+                                                <rect key="frame" x="0.0" y="0.0" width="215.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by location, room-type, price..etc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Coz-lW-z2g">
+                                                <rect key="frame" x="0.0" y="31" width="215.5" height="18"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-75-ng5">
+                                        <rect key="frame" x="11.5" y="69" width="312" height="264"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Mmi-75-ng5" secondAttribute="height" multiplier="13:11" id="3fZ-H9-s7M"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32941176470588235" green="0.19215686274509802" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iIM-gX-riG" firstAttribute="trailing" secondItem="9cB-Xg-M2n" secondAttribute="trailing" constant="20" id="Bne-VF-Jyc"/>
+                            <constraint firstItem="xEz-hO-dVR" firstAttribute="top" secondItem="9cB-Xg-M2n" secondAttribute="bottom" constant="10" id="NMW-GN-EnP"/>
+                            <constraint firstItem="xEz-hO-dVR" firstAttribute="leading" secondItem="iIM-gX-riG" secondAttribute="leading" constant="20" id="bCx-YB-T25"/>
+                            <constraint firstItem="iIM-gX-riG" firstAttribute="bottom" secondItem="xEz-hO-dVR" secondAttribute="bottom" constant="20" id="dh9-6i-ExN"/>
+                            <constraint firstItem="iIM-gX-riG" firstAttribute="trailing" secondItem="xEz-hO-dVR" secondAttribute="trailing" constant="20" id="nEc-oV-9cu"/>
+                            <constraint firstItem="9cB-Xg-M2n" firstAttribute="top" secondItem="iIM-gX-riG" secondAttribute="top" constant="20" id="ypC-My-pP1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iIM-gX-riG"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="451"/>
+                    <connections>
+                        <outlet property="contentImageView" destination="Mmi-75-ng5" id="5Z5-8q-QhV"/>
+                        <outlet property="headingLabel" destination="bS4-Ao-z1R" id="qpY-1C-2Dd"/>
+                        <outlet property="skipBtn" destination="9cB-Xg-M2n" id="7m5-Y9-mT4"/>
+                        <outlet property="subHeadingLabel" destination="Coz-lW-z2g" id="j0Y-oI-Hlh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ew-cQ-d69" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.60000000000002" y="2.2488755622188905"/>
+        </scene>
+        <!--Walkthrough Page View Controller-->
+        <scene sceneID="Myg-UX-eDG">
+            <objects>
+                <pageViewController storyboardIdentifier="WalkthroughPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="3Ym-IL-yWY" customClass="WalkthroughPageViewController" customModule="Room_Finder" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L4I-sm-59A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="fourColor">
+            <color red="0.99215686274509807" green="0.19607843137254902" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
