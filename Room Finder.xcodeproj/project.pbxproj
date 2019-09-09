@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5296DA722C52FAF0040D2C8 /* CustomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5296DA622C52FAF0040D2C8 /* CustomeTabBar.swift */; };
 		B52BE2B622BAA0A6000C89C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52BE2B522BAA0A6000C89C2 /* AppDelegate.swift */; };
 		B52BE2B822BAA0A6000C89C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52BE2B722BAA0A6000C89C2 /* ViewController.swift */; };
 		B52BE2BB22BAA0A6000C89C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B52BE2B922BAA0A6000C89C2 /* Main.storyboard */; };
@@ -30,6 +29,7 @@
 		B52BE2F522C131F5000C89C2 /* icon_two.png in Resources */ = {isa = PBXBuildFile; fileRef = B52BE2F422C131F5000C89C2 /* icon_two.png */; };
 		B52F6FE922C360C0000B4615 /* ContinueProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F6FE822C360C0000B4615 /* ContinueProfileVC.swift */; };
 		B52F6FEB22C36DCA000B4615 /* aboutselfDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52F6FEA22C36DCA000B4615 /* aboutselfDesign.swift */; };
+		B534E61522F8CA7A00F654AB /* CustomeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B534E61422F8CA7A00F654AB /* CustomeTabBar.swift */; };
 		B53E02BB22C2050F0040126B /* ricon.png in Resources */ = {isa = PBXBuildFile; fileRef = B53E02BA22C2050E0040126B /* ricon.png */; };
 		B53E02BE22C206E60040126B /* TextFieldDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E02BD22C206E60040126B /* TextFieldDesign.swift */; };
 		B53E02C322C245750040126B /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B53E02C222C245750040126B /* facebook.png */; };
@@ -40,10 +40,14 @@
 		B53E02D222C296EE0040126B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E02D122C296EE0040126B /* ProfileVC.swift */; };
 		B53E02D622C297F20040126B /* user-image.png in Resources */ = {isa = PBXBuildFile; fileRef = B53E02D522C297F20040126B /* user-image.png */; };
 		B53E02D822C29EE50040126B /* GenderBtnDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53E02D722C29EE50040126B /* GenderBtnDesign.swift */; };
+		B5F071502326DFB7007E802A /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F0714F2326DFB7007E802A /* DiscoverVC.swift */; };
+		B5F071532326DFF1007E802A /* ShortlistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F071522326DFF1007E802A /* ShortlistVC.swift */; };
+		B5F071562326E05C007E802A /* ShortlistItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F071542326E05C007E802A /* ShortlistItemCell.swift */; };
+		B5F071572326E05C007E802A /* ShortlistItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5F071552326E05C007E802A /* ShortlistItemCell.xib */; };
+		B5F071592326E318007E802A /* ShortlistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F071582326E318007E802A /* ShortlistModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5296DA622C52FAF0040D2C8 /* CustomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabBar.swift; sourceTree = "<group>"; };
 		B52BE2B222BAA0A6000C89C2 /* Room Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Room Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52BE2B522BAA0A6000C89C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B52BE2B722BAA0A6000C89C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 		B52BE2F422C131F5000C89C2 /* icon_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_two.png; sourceTree = "<group>"; };
 		B52F6FE822C360C0000B4615 /* ContinueProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueProfileVC.swift; sourceTree = "<group>"; };
 		B52F6FEA22C36DCA000B4615 /* aboutselfDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutselfDesign.swift; sourceTree = "<group>"; };
+		B534E61422F8CA7A00F654AB /* CustomeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeTabBar.swift; sourceTree = "<group>"; };
 		B53E02BA22C2050E0040126B /* ricon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ricon.png; sourceTree = "<group>"; };
 		B53E02BD22C206E60040126B /* TextFieldDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDesign.swift; sourceTree = "<group>"; };
 		B53E02C222C245750040126B /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -78,6 +83,11 @@
 		B53E02D122C296EE0040126B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B53E02D522C297F20040126B /* user-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-image.png"; sourceTree = "<group>"; };
 		B53E02D722C29EE50040126B /* GenderBtnDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderBtnDesign.swift; sourceTree = "<group>"; };
+		B5F0714F2326DFB7007E802A /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		B5F071522326DFF1007E802A /* ShortlistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortlistVC.swift; sourceTree = "<group>"; };
+		B5F071542326E05C007E802A /* ShortlistItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortlistItemCell.swift; sourceTree = "<group>"; };
+		B5F071552326E05C007E802A /* ShortlistItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShortlistItemCell.xib; sourceTree = "<group>"; };
+		B5F071582326E318007E802A /* ShortlistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShortlistModel.swift; path = "Room Finder/ViewController/Shortlist/ShortlistModel.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +104,6 @@
 		B5296DA522C52F8A0040D2C8 /* CustomeTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				B5296DA622C52FAF0040D2C8 /* CustomeTabBar.swift */,
 			);
 			path = CustomeTabBar;
 			sourceTree = "<group>";
@@ -144,6 +153,8 @@
 		B52BE2C822BAA122000C89C2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B5F071512326DFD9007E802A /* Shortlist */,
+				B5F0714C2326DF3A007E802A /* Discover */,
 				B5296DA522C52F8A0040D2C8 /* CustomeTabBar */,
 				B52F6FE522C36045000B4615 /* ContinueProfile */,
 				B53E02D022C296D50040126B /* Profile */,
@@ -159,6 +170,7 @@
 		B52BE2C922BAA12B000C89C2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B5F071582326E318007E802A /* ShortlistModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -240,6 +252,7 @@
 				B53E02C722C249860040126B /* BtnDesign.swift */,
 				B53E02D722C29EE50040126B /* GenderBtnDesign.swift */,
 				B52F6FEA22C36DCA000B4615 /* aboutselfDesign.swift */,
+				B534E61422F8CA7A00F654AB /* CustomeTabBar.swift */,
 			);
 			path = Design;
 			sourceTree = "<group>";
@@ -274,6 +287,24 @@
 				B53E02D122C296EE0040126B /* ProfileVC.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		B5F0714C2326DF3A007E802A /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				B5F0714F2326DFB7007E802A /* DiscoverVC.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		B5F071512326DFD9007E802A /* Shortlist */ = {
+			isa = PBXGroup;
+			children = (
+				B5F071522326DFF1007E802A /* ShortlistVC.swift */,
+				B5F071542326E05C007E802A /* ShortlistItemCell.swift */,
+				B5F071552326E05C007E802A /* ShortlistItemCell.xib */,
+			);
+			path = Shortlist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +382,7 @@
 				B53E02BB22C2050F0040126B /* ricon.png in Resources */,
 				B52BE2BB22BAA0A6000C89C2 /* Main.storyboard in Resources */,
 				B52BE2DD22BAAA4A000C89C2 /* Roboto-Medium.ttf in Resources */,
+				B5F071572326E05C007E802A /* ShortlistItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,15 +395,19 @@
 			files = (
 				B53E02D222C296EE0040126B /* ProfileVC.swift in Sources */,
 				B52F6FE922C360C0000B4615 /* ContinueProfileVC.swift in Sources */,
+				B534E61522F8CA7A00F654AB /* CustomeTabBar.swift in Sources */,
 				B53E02D822C29EE50040126B /* GenderBtnDesign.swift in Sources */,
+				B5F071502326DFB7007E802A /* DiscoverVC.swift in Sources */,
 				B52BE2B822BAA0A6000C89C2 /* ViewController.swift in Sources */,
 				B52BE2B622BAA0A6000C89C2 /* AppDelegate.swift in Sources */,
+				B5F071532326DFF1007E802A /* ShortlistVC.swift in Sources */,
 				B52BE2E322BAAE8F000C89C2 /* WalkthroughPageViewController.swift in Sources */,
+				B5F071562326E05C007E802A /* ShortlistItemCell.swift in Sources */,
 				B52F6FEB22C36DCA000B4615 /* aboutselfDesign.swift in Sources */,
 				B53E02CF22C28C2F0040126B /* ForgotPasswordVC.swift in Sources */,
+				B5F071592326E318007E802A /* ShortlistModel.swift in Sources */,
 				B52BE2E522BAB1D7000C89C2 /* WalkthroughViewController.swift in Sources */,
 				B53E02CC22C258C90040126B /* LoginVC.swift in Sources */,
-				B5296DA722C52FAF0040D2C8 /* CustomeTabBar.swift in Sources */,
 				B53E02BE22C206E60040126B /* TextFieldDesign.swift in Sources */,
 				B52BE2D422BAA387000C89C2 /* LaunchVC.swift in Sources */,
 				B53E02CA22C2573F0040126B /* RegisterVC.swift in Sources */,
@@ -525,14 +561,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84W8QG5399;
 				INFOPLIST_FILE = "Room Finder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "createsapps.Room-Finder";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.createsapps.Room-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -543,14 +580,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84W8QG5399;
 				INFOPLIST_FILE = "Room Finder/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "createsapps.Room-Finder";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.createsapps.Room-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
